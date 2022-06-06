@@ -1,11 +1,11 @@
-#CSS GRID
+<h1> CSS GRID </h1>
 
 Para que o css grid funcione, o propriedade do display grid tem que entrar dentro do body, pois você vai estar informando que todo o body daquele site vai ser em css grid
 ```
     display:grid;
 ```
 
-##Grid-template
+<h2>Grid-template</h2>
 
 Precisamos dizer ao css grid quais são as partes do template (site todo) que vamos utilizar, e tambem nomear. 
 No caso do grid-template-columns ou rows vai ser definido o tamanho das colunas e linhas, respectivamente.
@@ -35,3 +35,15 @@ Porém para que seja implementado o grid template areas, temos que definir no el
     }
 ```
 
+Para que fique mais claro como é feito o grid, temos o site em questão, na parte "destaques" vai ser definida com 4 colunas e 3 linhas, então se pega 100% da tela e divide pelas quantidades de colunas ou linhas:
+
+```
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+```
+
+Depois precisamos definir a altura da seção "destaques", então, pegamos o 100vh (viewport height) e tiramos o tamanho do header (cabeçalho):
+
+```
+    height: calc(100vh -50px);
+```
