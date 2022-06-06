@@ -47,3 +47,24 @@ Depois precisamos definir a altura da seção "destaques", então, pegamos o 100
 ```
     height: calc(100vh -50px);
 ```
+
+Para definir o tamanho de cada elemento, temos que definir onde a coluna começa e termina e a mesma coisa na linha também, então:
+```
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+```
+Só que nesse caso vai dar erro, pois foi definido que vai terminar na coluna 3, então ele foi até a coluna 2 e parou, pois o ponto de parada dele foi até o 3. Mesma coisa acontece na linha, então temos que mudar isso, para isso:
+```
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+```
+
+Porém o código fica grande assim, então podemos diminuir isso:
+```
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+```
