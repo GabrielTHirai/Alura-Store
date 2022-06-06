@@ -1,3 +1,3 @@
-<h1>Alura Store</h1>
+#Alura Store
 
 Utilização do layout grid do css.
