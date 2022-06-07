@@ -68,3 +68,8 @@ Porém o código fica grande assim, então podemos diminuir isso:
     grid-column: 1 / 4;
     grid-row: 1 / 3;
 ```
+
+Para fazer um espaçamento entre os grid's, se usa uma propriedade especifica do grid, e não mais o margin, o que vamos usar vai ser:
+```
+    grid-gap: .2rem;
+```
